@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "59be9ecd6b3044780e56219da265b466",
+    "content-hash": "08f90ac3fb100d6e7df0d1d6410c458b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1594,6 +1594,65 @@
             "time": "2021-01-18T20:58:21+00:00"
         },
         {
+            "name": "mll-lab/laravel-graphql-playground",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mll-lab/laravel-graphql-playground.git",
+                "reference": "f76efb5d83827df355d548e2f78766787a3d1688"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mll-lab/laravel-graphql-playground/zipball/f76efb5d83827df355d548e2f78766787a3d1688",
+                "reference": "f76efb5d83827df355d548e2f78766787a3d1688",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8",
+                "illuminate/contracts": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8",
+                "illuminate/support": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8",
+                "php": "^7.1 || ^8"
+            },
+            "require-dev": {
+                "laravel/lumen-framework": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6 || ^7",
+                "localheinz/composer-normalize": "^1.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MLL\\GraphQLPlayground\\GraphQLPlaygroundServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MLL\\GraphQLPlayground\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benedikt Franke",
+                    "email": "benedikt@franke.tech"
+                }
+            ],
+            "description": "Easily integrate GraphQL Playground into your Laravel project",
+            "keywords": [
+                "graphql",
+                "graphql-playground",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/mll-lab/laravel-graphql-playground/issues",
+                "source": "https://github.com/mll-lab/laravel-graphql-playground/tree/v2.5.0"
+            },
+            "time": "2021-02-01T17:55:49+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.2.0",
             "source": {
@@ -1840,16 +1899,16 @@
         },
         {
             "name": "nuwave/lighthouse",
-            "version": "v5.12.7",
+            "version": "v5.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "bc863f5be618a90836e0834b36d91f9a51a0ddcd"
+                "reference": "0d8f0fb8a3dd2791dda4c772f3db4b53ee072fb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/bc863f5be618a90836e0834b36d91f9a51a0ddcd",
-                "reference": "bc863f5be618a90836e0834b36d91f9a51a0ddcd",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/0d8f0fb8a3dd2791dda4c772f3db4b53ee072fb3",
+                "reference": "0d8f0fb8a3dd2791dda4c772f3db4b53ee072fb3",
                 "shasum": ""
             },
             "require": {
@@ -1881,7 +1940,7 @@
                 "nunomaduro/larastan": "^0.6 || ^0.7",
                 "orchestra/testbench": "3.6.* || 3.7.* || 3.8.* || 3.9.* || ^4 || ^5 || ^6",
                 "phpbench/phpbench": "1.0.0-alpha4",
-                "phpstan/phpstan": "0.12.88",
+                "phpstan/phpstan": "0.12.89",
                 "phpstan/phpstan-mockery": "^0.12.5",
                 "phpstan/phpstan-phpunit": "^0.12.17",
                 "phpunit/phpunit": "^7.5 || ^8.4 || ^9",
@@ -1965,7 +2024,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-11T07:11:47+00:00"
+            "time": "2021-06-17T13:23:22+00:00"
         },
         {
             "name": "opis/closure",

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMyCasesTable extends Migration
+class CreateProjectsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,14 @@ class CreateMyCasesTable extends Migration
      */
     public function up()
     {
-        Schema::create('mycases', function (Blueprint $table) {
+        Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('title',300);
+            $table->string('stack',300);
+            $table->string('link',100);
+            $table->string('repo',100);
+            $table->string('slug',255);
         });
     }
 
@@ -26,6 +31,6 @@ class CreateMyCasesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('my_cases');
+        Schema::dropIfExists('projects');
     }
 }

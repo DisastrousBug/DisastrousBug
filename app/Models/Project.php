@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Portfolio extends Model
+class Project extends Model
 {
     use HasFactory;
 
@@ -20,15 +20,11 @@ class Portfolio extends Model
 
     protected $fillable = [
         'title',
-        'body',
-        'start_date',
-        'end_date',
-        'position',
-        'description',
+        'stack',
+        'link',
+        'repo',
+        'body'
     ];
 
-    public function projects(){
-        return $this->belongsToMany(Project::class, 'portfolio_projects');
-    }
 
 }
