@@ -23,8 +23,12 @@ class Project extends Model
         'stack',
         'link',
         'repo',
-        'body'
+        'description'
     ];
+
+    public function portfolios(){
+        return $this->belongsToMany(Portfolio::class, 'portfolio_projects');
+    }
 
 
 }

@@ -20,7 +20,6 @@ class Portfolio extends Model
 
     protected $fillable = [
         'title',
-        'body',
         'start_date',
         'end_date',
         'position',

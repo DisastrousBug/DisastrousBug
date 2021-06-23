@@ -1,0 +1,38 @@
+type User {
+    id: ID!
+    name: String!
+    email: String!
+}
+
+
+
+
+type Portfolio {
+    id: ID!
+    title: String!
+    slug: String!
+    description: String
+    start_date: String!
+    end_date: String
+    created_at: Date!
+    project: [Project!]! @belongsToMany
+}
+
+type Project {
+    id: ID!
+    title: String!
+    stack: String!
+    link: String!
+    description: String!
+    slug: String!
+    portfolios: [Portfolio!]! @belongsToMany
+}
+
+type Query {
+    user(id: ID! @eq): User @find
+    users: [User!]! @paginate
+    portfolios: [Portfolio!]! @all
+    portfolio(id: ID! @eq): Portfolio @find
+    projects: [Project!]! @all
+    project(id: ID! @eq): Project @find
+}

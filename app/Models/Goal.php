@@ -21,8 +21,6 @@ class Goal extends Model
 */
     ];
 
-    protected $casts = [
 
-    ];
 
 }
