@@ -30,6 +30,7 @@
 @task('run_composer')
     echo "Starting deployment ({{ $release }})"
     cd {{ $new_release_dir }}
+    composer u
     composer install --prefer-dist --no-scripts -q -o
 @endtask
 
