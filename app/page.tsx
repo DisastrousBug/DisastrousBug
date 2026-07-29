@@ -28,15 +28,37 @@ const experience = [
 
 const projects = [
   { number: "01", name: "AI Doctor Service", type: "AI healthcare service", text: "An AI-powered doctor service combining a Laravel backend, Go services and a web view for a focused healthcare experience.", tags: ["Laravel", "Go", "Web view"] },
-  { number: "02", name: "NaPopravku Telemed", type: "Healthcare platform", text: "Legacy platform work across mobile API compatibility, Docker deployment, documentation and collaboration with QA and mobile teams.", tags: ["Docker", "Mobile API", "Legacy"] },
+  { number: "02", name: "NaPopravku Telemed", type: "Healthcare platform", text: "Platform work across mobile API compatibility, documentation and collaboration with QA and mobile teams.", tags: ["Laravel", "Medicine", "Mobile API"] },
   { number: "03", name: "Finance management system", type: "Business analytics", text: "MVP finance platform for spending reports and analytics, with bank integrations, statement parsing and high-volume reports.", tags: ["Laravel 9", "ClickHouse", "Banks"] },
   { number: "04", name: "Histrf.ru", type: "Public & admin APIs", text: "An early high-pressure engagement: Laravel APIs for public and administrative use, delivered on an eight-person team in three months.", tags: ["Laravel", "Redis", "API"] },
   { number: "05", name: "rvio.histrf.ru", type: "Content platform", text: "An admin CMS built with Laravel Nova, including an Excel/CSV import flow that made article publication much simpler.", tags: ["Laravel Nova", "CMS", "Imports"] },
 ];
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        name: "Artyom Bondar — Backend Engineer",
+        url: "https://disastrousbug.com/",
+      },
+      {
+        "@type": "Person",
+        name: "Artyom Bondar",
+        url: "https://disastrousbug.com/",
+        jobTitle: "Senior PHP / Laravel Engineer",
+        description: "Senior backend engineer specialising in dependable PHP and Laravel systems.",
+        sameAs: ["https://www.linkedin.com/in/disastrousbug"],
+        knowsAbout: ["PHP", "Laravel", "REST APIs", "PostgreSQL", "Docker", "CI/CD"],
+        address: { "@type": "PostalAddress", addressLocality: "Kaliningrad", addressCountry: "RU" },
+      },
+    ],
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <section className="hero" id="top">
         <nav className="nav wrap"><a className="brand" href="#top">AB<span>_</span></a><div className="nav-links"><a href="#work">Selected work</a><a href="#experience">Experience</a><a className="nav-contact" href="mailto:artem_bondar98@mail.ru">Let&apos;s talk ↗</a></div></nav>
         <div className="hero-grid wrap">
