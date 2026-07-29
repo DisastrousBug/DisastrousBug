@@ -27,10 +27,11 @@ const experience = [
 ];
 
 const projects = [
-  { number: "01", name: "Histrf.ru", type: "Public & admin APIs", text: "An early high-pressure engagement: Laravel APIs for public and administrative use, delivered on an eight-person team in three months.", tags: ["Laravel", "Redis", "API"] },
-  { number: "02", name: "rvio.histrf.ru", type: "Content platform", text: "An admin CMS built with Laravel Nova, including an Excel/CSV import flow that made article publication much simpler.", tags: ["Laravel Nova", "CMS", "Imports"] },
+  { number: "01", name: "AI Doctor Service", type: "AI healthcare service", text: "An AI-powered doctor service combining a Laravel backend, Go services and a web view for a focused healthcare experience.", tags: ["Laravel", "Go", "Web view"] },
+  { number: "02", name: "NaPopravku Telemed", type: "Healthcare platform", text: "Legacy platform work across mobile API compatibility, Docker deployment, documentation and collaboration with QA and mobile teams.", tags: ["Docker", "Mobile API", "Legacy"] },
   { number: "03", name: "Finance management system", type: "Business analytics", text: "MVP finance platform for spending reports and analytics, with bank integrations, statement parsing and high-volume reports.", tags: ["Laravel 9", "ClickHouse", "Banks"] },
-  { number: "04", name: "NaPopravku Telemed", type: "Healthcare platform", text: "Legacy platform work across mobile API compatibility, Docker deployment, documentation and collaboration with QA and mobile teams.", tags: ["Docker", "Mobile API", "Legacy"] },
+  { number: "04", name: "Histrf.ru", type: "Public & admin APIs", text: "An early high-pressure engagement: Laravel APIs for public and administrative use, delivered on an eight-person team in three months.", tags: ["Laravel", "Redis", "API"] },
+  { number: "05", name: "rvio.histrf.ru", type: "Content platform", text: "An admin CMS built with Laravel Nova, including an Excel/CSV import flow that made article publication much simpler.", tags: ["Laravel Nova", "CMS", "Imports"] },
 ];
 
 export default function Home() {
@@ -50,7 +51,7 @@ export default function Home() {
         <div className="hero-footer wrap"><span>PHP / Laravel / APIs / Infrastructure</span><span>SCROLL TO EXPLORE <b>↓</b></span></div>
       </section>
 
-      <section className="proof wrap" aria-label="Career highlights"><div><strong>5+</strong><span>years building<br />web products</span></div><div><strong>30%</strong><span>faster API response<br />at NaPopravku</span></div><div><strong>50%</strong><span>faster delivery through<br />CI/CD optimisation</span></div><div><strong>∞</strong><span>curiosity for better<br />systems</span></div></section>
+      <section className="proof wrap" aria-label="Career highlights"><div><strong>6+</strong><span>years building<br />web products</span></div><div><strong>30%</strong><span>faster API response<br />at NaPopravku</span></div><div><strong>50%</strong><span>faster delivery through<br />CI/CD optimisation</span></div><div><strong>∞</strong><span>curiosity for better<br />systems</span></div></section>
 
       <section className="about wrap" id="about"><p className="section-label">01 / ABOUT</p><div><h2>I care about the details that keep a product calm under pressure.</h2><p className="body-copy">Five-plus years in Laravel have taught me that good backend work is as much about clarity as it is about code: well-shaped APIs, observable production systems, and the discipline to improve a legacy codebase without breaking the business around it.</p><a className="text-link dark" href="https://www.linkedin.com/in/disastrousbug" target="_blank" rel="noreferrer">LinkedIn profile <span>↗</span></a></div></section>
 
