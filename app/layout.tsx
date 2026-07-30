@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: "Artyom Bondar is a Senior PHP and Laravel Engineer with 6+ years of experience building fast, dependable APIs and backend systems.",
   keywords: ["PHP developer", "Laravel developer", "Senior Backend Engineer", "PHP engineer", "Laravel API developer", "Kaliningrad"],
   alternates: { canonical: "/" },
+  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   openGraph: { type: "website", url: "/", siteName: "Artyom Bondar — Backend Engineer", locale: "en_US", title: "Artyom Bondar — Senior PHP / Laravel Engineer", description: "Backend systems that hold together.", images: [{ url: "/og.png", width: 1200, height: 630, alt: "Artyom Bondar — Senior PHP / Laravel Engineer" }] },
   twitter: { card: "summary_large_image", title: "Artyom Bondar — Senior PHP / Laravel Engineer", description: "Backend systems that hold together.", images: ["/og.png"] },
