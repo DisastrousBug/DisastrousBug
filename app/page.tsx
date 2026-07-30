@@ -27,7 +27,7 @@ const experience = [
 ];
 
 const projects = [
-  { number: "01", name: "AI Doctor Service", type: "AI healthcare service", text: "An AI-powered doctor service combining a Laravel backend, Go services and a web view for a focused healthcare experience.", tags: ["Laravel", "Go", "Web view"] },
+  { number: "01", name: "AI Doctor Service", type: "AI healthcare service", text: "An AI-powered doctor service combining a Laravel backend, Go services and a web view for a focused healthcare experience.", tags: ["AI", "Laravel", "Go", "Web view"] },
   { number: "02", name: "NaPopravku Telemed", type: "Healthcare platform", text: "Platform work across mobile API compatibility, documentation and collaboration with QA and mobile teams.", tags: ["Laravel", "Medicine", "Mobile API"] },
   { number: "03", name: "Finance management system", type: "Business analytics", text: "MVP finance platform for spending reports and analytics, with bank integrations, statement parsing and high-volume reports.", tags: ["Laravel 9", "ClickHouse", "Banks"] },
   { number: "04", name: "Histrf.ru", type: "Public & admin APIs", text: "An early high-pressure engagement: Laravel APIs for public and administrative use, delivered on an eight-person team in three months.", tags: ["Laravel", "Redis", "API"] },
@@ -66,7 +66,7 @@ export default function Home() {
             <p className="eyebrow"><i /> Available for senior backend roles</p>
             <h1>Systems that<br /><em>hold together.</em></h1>
             <p className="intro">I&apos;m Artyom Bondar, a Senior PHP / Laravel Engineer who turns complex product requirements into fast, dependable backend systems.</p>
-            <div className="hero-actions"><a className="button button-main" href="mailto:artem_bondar98@mail.ru">Start a conversation <span>↗</span></a><a className="text-link" href="#work">See selected work <span>↓</span></a></div>
+            <div className="hero-actions"><a className="button button-main" href="mailto:artem_bondar98@mail.ru">Start a conversation <span>↗</span></a><a className="text-link" href="#work">See selected work <span>↓</span></a><a className="text-link" href="/artyom-bondar-resume.pdf" target="_blank" rel="noreferrer">Resume PDF <span>↗</span></a></div>
           </div>
           <aside className="signal-card"><div className="signal-top"><span>OPERATOR PROFILE</span><b>● ONLINE</b></div><div className="signal-name">ARTYOM<br />BONDAR</div><div className="signal-meta"><span>LOCATION<br /><strong>Kaliningrad, RU</strong></span><span>FOCUS<br /><strong>Backend systems</strong></span></div><div className="signal-line" /></aside>
         </div>
@@ -75,7 +75,7 @@ export default function Home() {
 
       <section className="proof wrap" aria-label="Career highlights"><div><strong>6+</strong><span>years building<br />web products</span></div><div><strong>30%</strong><span>faster API response<br />at NaPopravku</span></div><div><strong>50%</strong><span>faster delivery through<br />CI/CD optimisation</span></div><div><strong>∞</strong><span>curiosity for better<br />systems</span></div></section>
 
-      <section className="about wrap" id="about"><p className="section-label">01 / ABOUT</p><div><h2>I care about the details that keep a product calm under pressure.</h2><p className="body-copy">Five-plus years in Laravel have taught me that good backend work is as much about clarity as it is about code: well-shaped APIs, observable production systems, and the discipline to improve a legacy codebase without breaking the business around it.</p><a className="text-link dark" href="https://www.linkedin.com/in/disastrousbug" target="_blank" rel="noreferrer">LinkedIn profile <span>↗</span></a></div></section>
+      <section className="about wrap" id="about"><p className="section-label">01 / ABOUT</p><div><h2>I care about the details that keep a product calm under pressure.</h2><p className="body-copy">Five-plus years in Laravel have taught me that good backend work is as much about clarity as it is about code: well-shaped APIs, observable production systems, and the discipline to improve a legacy codebase without breaking the business around it.</p><div className="profile-links"><a className="text-link dark" href="https://www.linkedin.com/in/disastrousbug" target="_blank" rel="noreferrer">LinkedIn profile <span>↗</span></a><a className="text-link dark" href="https://career.habr.com/disastrous_bug" target="_blank" rel="noreferrer">Habr Career <span>↗</span></a><a className="text-link dark" href="/artyom-bondar-resume.pdf" target="_blank" rel="noreferrer">Open résumé <span>↗</span></a></div></div></section>
 
       <section className="work-section" id="work"><div className="wrap"><div className="section-heading"><p className="section-label">02 / SELECTED WORK</p><h2>Evidence over<br /><em>empty promises.</em></h2><p>Some of the systems and challenges that shaped the way I work.</p></div><div className="projects">{projects.map((project) => <article className="project" key={project.number}><div className="project-no">{project.number}</div><div className="project-main"><p>{project.type}</p><h3>{project.name}</h3><p className="project-text">{project.text}</p><div className="tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div><span className="project-arrow">↗</span></article>)}</div></div></section>
 
