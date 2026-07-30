@@ -28,10 +28,11 @@ const experience = [
 
 const projects = [
   { number: "01", name: "AI Doctor Service", type: "AI healthcare service", text: "An AI-powered doctor service combining a Laravel backend, Go services and a web view for a focused healthcare experience.", tags: ["AI", "Laravel", "Go", "Web view"] },
-  { number: "02", name: "NaPopravku Telemed", type: "Healthcare platform", text: "Platform work across mobile API compatibility, documentation and collaboration with QA and mobile teams.", tags: ["Laravel", "Medicine", "Mobile API"] },
-  { number: "03", name: "Finance management system", type: "Business analytics", text: "MVP finance platform for spending reports and analytics, with bank integrations, statement parsing and high-volume reports.", tags: ["Laravel 9", "ClickHouse", "Banks"] },
-  { number: "04", name: "Histrf.ru", type: "Public & admin APIs", text: "An early high-pressure engagement: Laravel APIs for public and administrative use, delivered on an eight-person team in three months.", tags: ["Laravel", "Redis", "API"] },
-  { number: "05", name: "rvio.histrf.ru", type: "Content platform", text: "An admin CMS built with Laravel Nova, including an Excel/CSV import flow that made article publication much simpler.", tags: ["Laravel Nova", "CMS", "Imports"] },
+  { number: "02", name: "Health Activity Tracker", type: "Personal health platform", text: "A privacy-minded health companion for logging weight, blood pressure, meals, activity and sport. AI photo analysis estimates meal calories and macros, while weekly and monthly summaries turn personal data into practical motivation. The platform also suggests recipes, exercises and tasks around each user’s goals, with a configurable admin workspace for diary types and recommendations.", tags: ["AI", "Laravel", "HealthKit", "MedTech"] },
+  { number: "03", name: "NaPopravku Telemed", type: "Healthcare platform", text: "Platform work across mobile API compatibility, documentation and collaboration with QA and mobile teams.", tags: ["Laravel", "Medicine", "Mobile API"] },
+  { number: "04", name: "Finance management system", type: "Business analytics", text: "MVP finance platform for spending reports and analytics, with bank integrations, statement parsing and high-volume reports.", tags: ["Laravel 9", "ClickHouse", "Banks"] },
+  { number: "05", name: "Histrf.ru", type: "Public & admin APIs", text: "An early high-pressure engagement: Laravel APIs for public and administrative use, delivered on an eight-person team in three months.", tags: ["Laravel", "Redis", "API"] },
+  { number: "06", name: "rvio.histrf.ru", type: "Content platform", text: "An admin CMS built with Laravel Nova, including an Excel/CSV import flow that made article publication much simpler.", tags: ["Laravel Nova", "CMS", "Imports"] },
 ];
 
 export default function Home() {
