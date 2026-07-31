@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Mono, Instrument_Serif, Manrope } from "next/font/google";
-import Script from "next/script";
+import { Analytics } from "./analytics";
 import "./globals.css";
 
 const sans = Manrope({ variable: "--font-sans", subsets: ["latin"] });
@@ -25,18 +25,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <head>
-        {googleAnalyticsId && <>
-          <Script src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`} strategy="afterInteractive" />
-          <Script id="google-analytics" strategy="afterInteractive">{`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${googleAnalyticsId}');
-          `}</Script>
-        </>}
-      </head>
-      <body className={`${sans.variable} ${serif.variable} ${mono.variable}`}>{children}</body>
+      <body className={`${sans.variable} ${serif.variable} ${mono.variable}`}>
+        <Analytics measurementId={googleAnalyticsId} />
+        {children}
+      </body>
     </html>
   );
 }
