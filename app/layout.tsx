@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Mono, Instrument_Serif, Manrope } from "next/font/google";
 import { Analytics } from "./analytics";
-import { BuyMeACoffee } from "./buy-me-a-coffee";
 import "./globals.css";
 
 const sans = Manrope({ variable: "--font-sans", subsets: ["latin"] });
@@ -29,7 +28,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body className={`${sans.variable} ${serif.variable} ${mono.variable}`}>
         <Analytics measurementId={googleAnalyticsId} />
-        <BuyMeACoffee username={buyMeACoffeeId} />
+        {buyMeACoffeeId ? (
+          <script
+            async
+            data-name="BMC-Widget"
+            data-cfasync="false"
+            data-id={buyMeACoffeeId}
+            data-description="Support me on Buy me a coffee!"
+            data-message=""
+            data-color="#79D6B5"
+            data-position="Right"
+            data-x_margin="18"
+            data-y_margin="18"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+          />
+        ) : null}
         {children}
       </body>
     </html>
