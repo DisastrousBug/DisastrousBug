@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Mono, Instrument_Serif, Manrope } from "next/font/google";
 import { Analytics } from "./analytics";
+import { BuyMeACoffee } from "./buy-me-a-coffee";
 import "./globals.css";
 
 const sans = Manrope({ variable: "--font-sans", subsets: ["latin"] });
@@ -8,6 +9,7 @@ const serif = Instrument_Serif({ variable: "--font-serif", subsets: ["latin"], w
 const mono = DM_Mono({ variable: "--font-mono", subsets: ["latin"], weight: "400" });
 const yandexVerification = process.env.NEXT_PUBLIC_YANDEX_VERIFICATION;
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const buyMeACoffeeId = process.env.NEXT_PUBLIC_BUY_ME_A_COFFEE_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://disastrousbug.com"),
@@ -27,6 +29,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body className={`${sans.variable} ${serif.variable} ${mono.variable}`}>
         <Analytics measurementId={googleAnalyticsId} />
+        <BuyMeACoffee username={buyMeACoffeeId} />
         {children}
       </body>
     </html>
