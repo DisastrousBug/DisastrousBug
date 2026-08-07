@@ -41,16 +41,23 @@ export default function Home() {
     "@graph": [
       {
         "@type": "WebSite",
-        name: "Artyom Bondar — Backend Engineer",
+        name: "DisastrousBug",
+        alternateName: "Artyom Bondar — Backend Engineer",
         url: "https://disastrousbug.com/",
       },
       {
         "@type": "Person",
         name: "Artyom Bondar",
+        alternateName: "DisastrousBug",
         url: "https://disastrousbug.com/",
         jobTitle: "Senior PHP / Laravel Engineer",
         description: "Senior backend engineer specialising in dependable PHP and Laravel systems.",
-        sameAs: ["https://www.linkedin.com/in/disastrousbug"],
+        sameAs: [
+          "https://github.com/DisastrousBug",
+          "https://www.linkedin.com/in/disastrousbug",
+          "https://career.habr.com/disastrous_bug",
+          "https://t.me/disastrous_bug",
+        ],
         knowsAbout: ["PHP", "Laravel", "REST APIs", "PostgreSQL", "Docker", "CI/CD"],
         address: { "@type": "PostalAddress", addressLocality: "Kaliningrad", addressCountry: "RU" },
       },
@@ -66,7 +73,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow"><i /> Available for senior backend roles</p>
             <h1>Systems that<br /><em>hold together.</em></h1>
-            <p className="intro">I&apos;m Artyom Bondar, a Senior PHP / Laravel Engineer who turns complex product requirements into fast, dependable backend systems.</p>
+            <p className="intro">I&apos;m Artyom Bondar — known online as DisastrousBug — a Senior PHP / Laravel Engineer who turns complex product requirements into fast, dependable backend systems.</p>
             <div className="hero-actions"><a className="button button-main" href="mailto:artem_bondar98@mail.ru">Start a conversation <span>↗</span></a><a className="text-link" href="#work">See selected work <span>↓</span></a><a className="text-link" href="/artyom-bondar-resume.pdf" target="_blank" rel="noreferrer">Resume PDF <span>↗</span></a></div>
           </div>
           <aside className="signal-card"><div className="signal-top"><span>OPERATOR PROFILE</span><b>● ONLINE</b></div><div className="signal-name">ARTYOM<br />BONDAR</div><div className="signal-meta"><span>LOCATION<br /><strong>Kaliningrad, RU</strong></span><span>FOCUS<br /><strong>Backend systems</strong></span></div><div className="signal-line" /></aside>
